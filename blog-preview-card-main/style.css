@@ -68,7 +68,7 @@ html, body {
   margin-bottom: 15px;
   cursor: pointer;
 }
-.h2:hover{
+#h2:hover{
   color: hsl(47, 88%, 63%);
 }
 #intro{
