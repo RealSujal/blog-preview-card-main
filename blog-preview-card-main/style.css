@@ -4,48 +4,49 @@
   font-family: 'Figtree';
   box-sizing: border-box;
 }
-html, body {
+html,
+body {
+  background-color: hsl(47, 88%, 63%);
   width: 100%;
   height: 100%;
 }
 
-@media only screen and (orientation: landscape) {
-  
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
 }
-#master{
+#master {
   background-color: hsl(47, 88%, 63%);
   height: 100%;
   width: 100%;
   position: relative;
 }
-#main{
+#main {
   height: 75vh;
-  width: 26vw;
+  width: 25vw;
   border: 1px solid black;
   position: absolute;
   left: 33%;
   top: 14%;
   border-radius: 20px;
   background-color: white;
-  box-shadow: black 10px 10px;
+  box-shadow: 10px 10px black;
 }
-#up{
+#up {
   position: relative;
   height: 50%;
   width: 100%;
   top: 17px;
   left: 17px;
 }
-.photo{
+.photo {
   margin: 0 8px 5px 8px;
   width: 85%;
   border-radius: 12px;
 }
-#down{
+#down {
   height: 50%;
   padding: 28px;
 }
-.p{
+.p {
   height: 29px;
   width: 90px;
   background-color: hsl(47, 88%, 63%);
@@ -53,89 +54,105 @@ html, body {
   bottom: 40px;
   border-radius: 5px;
 }
-#learn{
+#learn {
   font-weight: 900;
   position: absolute;
   top: 5px;
   left: 12px;
   font-size: 16px;
 }
-#publish{
+#publish {
   font-size: 13px;
   font-weight: 500;
   margin-top: -30px;
   margin-bottom: 17px;
 }
-#h2{
+#h2 {
   font-size: 22px;
   letter-spacing: 1px;
   margin-bottom: 15px;
   cursor: pointer;
 }
-#h2:hover{
+#h2:hover {
   color: hsl(47, 88%, 63%);
 }
-#intro{
+#intro {
   font-size: 14px;
   color: hsl(0, 0%, 50%);
   letter-spacing: 1px;
   margin-bottom: 15px;
 }
-footer{
+footer {
   display: flex;
 }
-h3{
+h3 {
   margin-top: 5px;
   font-size: 14px;
 }
-.pfp{
+.pfp {
   height: 30px;
   margin-right: 11px;
 }
 
-@media only screen and (min-width:320px) and (max-width: 480px) and (orientation: portrait) {
-  #main{
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  #main {
     width: 75%;
     height: 50%;
     position: absolute;
     left: 10%;
   }
-  #up{
+  #up {
     width: 105%;
-    height: 45%;;
+    height: 45%;
   }
-  .photo{
+  .photo {
     border-radius: 12px;
     margin: 0;
     width: 85%;
     text-align: center;
   }
-  #down{
+  #down {
     text-wrap: wrap;
     padding: 5%;
     margin-top: 2%;
   }
-  .text{
-    font-size: 1.2rem;
+  .text {
+    font-size: calc(15px + 0.390625vw);
   }
-  .p{
+  .p {
     margin-top: 12px;
     margin-bottom: 5px;
   }
-  #publish{
+  #publish {
     margin-bottom: 15px;
   }
-  #h2{
+  #h2 {
     letter-spacing: 0px;
     margin-top: 4%;
     margin-bottom: 6%;
   }
-  #intro{
+  #intro {
     margin-top: 4%;
     margin-bottom: 4%;
   }
-  footer{
+  footer {
     margin-top: 10%;
   }
+}
 
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  body {
+    font-size: calc(18px + 0.390625vw);
+  }
+  #master {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  #main {
+    width: 65%;
+    position: absolute;
+    left: 17%;
+    top: 8%;
+  }
 }
